@@ -1,0 +1,14 @@
+ -- Practicing CREATE DATABASE, CREATE TABLE, INSERT, and SELECT basics
+CREATE DATABASE college;
+USE college;
+
+CREATE TABLE student (
+id INT PRIMARY KEY,
+name VARCHAR(50),
+age INT NOT NULL
+);
+
+INSERT INTO student VALUES(1,"Aadi",19);
+INSERT INTO student VALUES(2,"KK",21);
+
+SELECT * FROM student;
