@@ -2,13 +2,22 @@
 CREATE DATABASE college;
 USE college;
 
-CREATE TABLE student (
+CREATE TABLE student(
+rollno INT PRIMARY KEY,
+name VARCHAR(50)
+);
+SELECT * FROM student;
+-- Practice Question
+CREATE DATABASE xyz_company;
+CREATE TABLE employee(
 id INT PRIMARY KEY,
 name VARCHAR(50),
-age INT NOT NULL
+salary INT
 );
-
-INSERT INTO student VALUES(1,"Aadi",19);
-INSERT INTO student VALUES(2,"KK",21);
-
-SELECT * FROM student;
+INSERT INTO employee
+(id, name,salary)
+VALUES 
+(1,"Adam",40000),
+(2,"bob",45000),
+(3,"casey",38000);
+SELECT * FROM employee;
