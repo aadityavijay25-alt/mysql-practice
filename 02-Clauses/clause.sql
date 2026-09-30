@@ -19,5 +19,23 @@ VALUES
 
 SELECT DISTINCT grade FROM student;
 SELECT * FROM student WHERE marks >80;
+
 -- Using LIMIT CLAUSE
 SELECT * FROM student WHERE marks >75 LIMIT 3;
+
+-- Ascending and Descending
+SELECT * FROM student ORDER BY city ASC;
+SELECT * FROM student ORDER BY marks DESC LIMIT 3;
+
+-- Aggregate Function
+SELECT MAX(marks) FROM student;
+SELECT AVG(marks) FROM student;
+SELECT COUNT(rollno) FROM student;
+
+-- GROUP BY
+SELECT city,avg(marks) FROM student GROUP BY city;
+
+-- UPDATE 
+SET SQL_SAFE_UPDATES = 0;
+UPDATE student SET marks = marks + 1;
+SELECT * FROM student;
