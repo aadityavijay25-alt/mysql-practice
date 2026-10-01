@@ -39,3 +39,6 @@ SELECT city,avg(marks) FROM student GROUP BY city;
 SET SQL_SAFE_UPDATES = 0;
 UPDATE student SET marks = marks + 1;
 SELECT * FROM student;
+
+-- ALTER
+ALTER TABLE student CHANGE name full_name VARCHAR(50);

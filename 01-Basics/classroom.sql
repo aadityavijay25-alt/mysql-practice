@@ -1,4 +1,3 @@
--- Practicing Constraints and WHERE clause 
 CREATE DATABASE college;
 USE college;
 CREATE TABLE student (
@@ -20,3 +19,4 @@ VALUES
 
 SELECT DISTINCT grade FROM student;
 SELECT * FROM student WHERE marks >80;
+SELECT * FROM student WHERE marks >75 LIMIT 3;
